@@ -8,8 +8,24 @@
         <title>Find and Replace</title>
     </head>
     <body>
-        <!-- form here -->
-
-        <div id="result"></div>
+        <div class="container">
+            <h1>"Fun" with Find and Replace!</h1>
+            <form id="find-and-replace" action="#">
+                <div class="form-group">
+                    <label for="stringToSearch">Enter a string to search</label>
+                    <input id="stringToSearch" type="text" placeholder="String to search">
+                </div>
+                <div class="form-group">
+                    <label for="wordToFind">Enter a word to find</label>
+                    <input id="wordToFind" type="text" placeholder="Word to find">
+                </div>
+                <div class="form-group">
+                    <label for="replacement">Replacement word</label>
+                    <input id="replacement" type="text" placeholder="Replacement word">
+                </div>
+                <button type="submit" class="btn btn-primary">Go</button>
+            </form>
+            <div id="result"></div>
+        </div>
     </body>
 </html>

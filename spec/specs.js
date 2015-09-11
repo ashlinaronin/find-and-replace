@@ -1,5 +1,4 @@
 // var findAndReplace = function(stringToSearch, wordToFind, replacement);
-
 describe('findAndReplace', function() {
     it('handles a single-character replacement found in a single-character input', function() {
         expect(findAndReplace('a', 'a', 'b')).to.equal('b');
