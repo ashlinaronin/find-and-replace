@@ -1,3 +1,58 @@
+body {
+    text-align: center;
+    font-family: Quicksand;
+    background-image: linear-gradient(#FF00FF, blue);
+}
+
+h1 {
+    font-weight: bolder;
+    color: #F0F0F0;
+    text-decoration: underline;
+}
+
 #result {
-  display: none;
+    display: none;
+    font-weight: bolder;
+    background-color: #C3CDE3;
+    border-radius: 10%;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #0F0F0F;
+
+    /* Support transition in all browsers */
+    -webkit-transition: width 2s, height 2s, background-color 2s, transform 2s;
+    -moz-transition: width 2s, height 2s, background-color 2s, transform 2s;
+    -o-transition: width 2s, height 2s, background-color 2s, transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+#result:hover {
+    /* Support transform in all browsers */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-color: #F6F6F6;
+}
+
+#findAndReplace input {
+    width: 60%;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.gradient-btn {
+    width: 60%;
+    border-radius: 50%;
+    border-style: ridge;
+    color: #F0F0F0;
+    background-image: linear-gradient(to bottom, #FFFFFF, #2F2F2F);
+    text-shadow: 1px 1px 3px #666666;
+}
+
+.gradient-btn:hover {
+    background-image: linear-gradient(to bottom, #2F2F2F, #FFFFFF);
+    color: #000000;
 }

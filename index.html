@@ -2,6 +2,7 @@
     <head>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
         <script src="js/jquery-1.11.3.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/formprocessing.js"></script>
@@ -10,20 +11,21 @@
     <body>
         <div class="container">
             <h1>"Fun" with Find and Replace!</h1>
-            <form id="find-and-replace" action="#">
+            <!-- Hide labels because we are using placeholders instead. -->
+            <form id="findAndReplace" action="#">
                 <div class="form-group">
-                    <!-- <label for="stringToSearch">Enter a string to search</label> -->
-                    <input id="stringToSearch" type="text" placeholder="String to search">
+                    <label for="stringToSearch" class="hidden">Enter a string to search</label>
+                    <input id="stringToSearch" type="text" placeholder="String to search" autofocus required>
                 </div>
                 <div class="form-group">
-                    <!-- <label for="wordToFind">Enter a word to find</label> -->
-                    <input id="wordToFind" type="text" placeholder="Word to find">
+                    <label for="wordToFind" class="hidden">Enter a word to find</label>
+                    <input id="wordToFind" type="text" placeholder="Word to find" required>
                 </div>
                 <div class="form-group">
-                    <!-- <label for="replacement">Replacement word</label> -->
-                    <input id="replacement" type="text" placeholder="Replacement word">
+                    <label for="replacement" class="hidden">Replacement word</label>
+                    <input id="replacement" type="text" placeholder="Replacement word" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Go</button>
+                <button type="submit" class="gradient-btn">Go</button>
             </form>
             <div id="result"></div>
         </div>

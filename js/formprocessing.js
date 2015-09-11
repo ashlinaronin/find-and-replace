@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("form#find-and-replace").submit(function(event) {
+    $("form#findAndReplace").submit(function(event) {
         var stringToSearch = $("input#stringToSearch").val();
         var wordToFind = $("input#wordToFind").val();
         var replacement = $("input#replacement").val();
